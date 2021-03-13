@@ -23,6 +23,69 @@ body {
   background-color: rgba(71, 3, 23, 0.7) !important;
   color: #cccccc;
 }
+/* buttons main */
+.btn-clubs {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff !important;
+  padding: 5px 20px;
+  height: 60px;
+  border-radius: 11px;
+  border: none;
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-clubs:hover {
+  font-size: 31px;
+  padding: 5px 20px;
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.05);
+}
+
+.btn-clubs:focus {
+  outline: none;
+}
+
+.btn-clubs.register-bottom {
+  background-image: linear-gradient(
+    to right,
+    #00818a,
+    #07a8b0,
+    #0b8a84,
+    #07b061dc
+  );
+  box-shadow: 0 4px 15px 0 #003e42;
+}
+
+.btn-clubs.register-top {
+  background-image: linear-gradient(
+    to right,
+    #222831,
+    #686d76,
+    #222831,
+    #393e46
+  );
+  box-shadow: 0 4px 15px 0 #003e42;
+  margin-top: 3%;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
 /* carousel */
 .carousel {
   width: 90vw !important;
