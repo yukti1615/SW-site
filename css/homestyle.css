@@ -10,9 +10,22 @@ body {
   align-items: center;
 }
 
+
+.carousel-inner {
+    position: relative;
+    width: 80% !important;
+    
+    overflow: hidden;
+}
+
+.carousel-control-next {
+    margin-right: 10vw !important;
+}
+
 .carousel{
   width:90vw !important;
   height:auto !important;
+margin-left:7vw;
 }
 /* blocks common to all */
 .block-area {
@@ -20,31 +33,49 @@ body {
   padding: 5% !important;
   overflow: hidden;
   position: relative;
-  width: 97%;
+  width: 98%;
   height: 50%;
   background-color: rgba(71, 3, 3, 0.637);
   color: #cccccc;
 }
 /* navbar */
-.navbar {
-  background-color: rgba(71, 3, 3, 0.8) !important;
+.navbar.bg-light{
+  background-color: rgb(255, 255, 255) !important;
+ 
 }
 .nav-link {
-  color: #f5c0c0 !important;
+  color: #ffa6a6 !important;
+font-size:1.2rem !important;
+font-weight:500 !important;
+margin:0 20px !important;
+  
 }
+/* .nav-link .dropdown-toggle{
+  font-size:2rem !important;
+} */
+
+.navbar-nav{
+ margin-left: 40vw !important;
+}
+
 .footer-section {
   padding: 0px;
   /* margin: 20px;
   margin-top: 80vh;
-  margin-bottom: 2%;
+  
   margin-right: 20px;
   margin-top: 6vh;
  
-   overflow: hidden;
-  position: absolute; 
+ 
    bottom: 0px;
-  margin-left: 3vw;
-  margin-right: 3vw;  */
+
+   */
+   width:96%;
+    overflow: hidden;
+  position: relative; 
+   margin-right: 2vw !important;
+   margin-left: 2vw;
+   margin-bottom: 1vh !important;
 }
 
 .main-content {
