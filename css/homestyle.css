@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* background-image: url("../3.jpg"); */
   background-image: linear-gradient(to bottom right, #f5c0c0, #f4d160, #f2b4b4);
@@ -9,24 +12,6 @@ body {
   font-family: "Montserrat", sans-serif;
   align-items: center;
 }
-
-
-.carousel-inner {
-    position: relative;
-    width: 80% !important;
-    
-    overflow: hidden;
-}
-
-.carousel-control-next {
-    margin-right: 10vw !important;
-}
-
-.carousel{
-  width:90vw !important;
-  height:auto !important;
-margin-left:7vw;
-}
 /* blocks common to all */
 .block-area {
   margin: 5%;
@@ -35,39 +20,59 @@ margin-left:7vw;
   position: relative;
   width: 98%;
   height: 50%;
-  background-color: rgba(71, 3, 3, 0.637);
+  background-color: rgba(71, 3, 23, 0.7) !important;
   color: #cccccc;
 }
+/* carousel */
+.carousel {
+  width: 90vw !important;
+  height: auto !important;
+  margin-left: 7vw;
+}
+.carousel-inner {
+  position: relative;
+  width: 80% !important;
+  overflow: hidden;
+}
+.carousel-control-next {
+  margin-right: 10vw !important;
+}
+
 /* navbar */
-.navbar.bg-light{
- background-color: rgba(71, 3, 3, 0.637) !important;
- 
+.navbar.bg-light {
+  background-color: rgba(71, 3, 23, 0.8) !important;
 }
 .nav-link {
-  color: #ffa6a6 !important;
-font-size:1.2rem !important;
-font-weight:500 !important;
-margin:0 20px !important;
-  
+  color: #d88476 !important;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  margin: 0 20px !important;
 }
-/* .nav-link .dropdown-toggle{
-  font-size:2rem !important;
-} */
-
-.navbar-nav{
- margin-left: 40vw !important;
+.navbar-nav {
+  margin-left: 40vw !important;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  color: #d88476 !important;
+  font-weight: 900;
 }
 
+/* footer section */
 .footer-section {
   padding: 0px;
-   width:96%;
-    overflow: hidden;
-  position: relative; 
-   margin-right: 2vw !important;
-   margin-left: 2vw;
-   margin-bottom: 1vh !important;
+  width: 96%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 2vw !important;
+  margin-left: 2vw;
+  margin-bottom: 4vh !important;
 }
-
+.icon-footer {
+  color: #fff6a9;
+}
+.icon-footer :hover {
+  color: chocolate !important;
+}
 .main-content {
   display: flex;
 }
@@ -116,84 +121,6 @@ margin:0 20px !important;
 .center {
   margin-left: 50px;
   margin-right: 20px;
-}
-
-.heading {
-  font-size: calc(15px + 9vh);
-  line-height: calc(15px + 9vh);
-  /*text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  color: #fff6a9;
-
-  font-family: "Sacramento", cursive;
-  text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
-}
-
-.heading h1 {
-  padding: 2vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 370px;
-  margin-top: 150px;
-  width: 45%;
-  height: 25vh;
-  background: rgba(0, 162, 255, 0);
-}
-
-@-webkit-keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
-}
-
-@keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
 }
 
 @media screen and (max-width: 1000px) {
