@@ -9,6 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
   align-items: center;
 }
+
+.carousel{
+  width:90vw !important;
+  height:auto !important;
+}
 /* blocks common to all */
 .block-area {
   margin: 5%;
