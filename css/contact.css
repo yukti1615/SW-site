@@ -1,0 +1,386 @@
+.list{
+  list-style-type: none;
+  margin: 20px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgba(19, 4, 4, 0.74);
+  
+
+}
+
+.list-contents{
+  display: inline;
+  float: right;
+
+}
+
+.Logo{
+  float: left;
+  
+}
+
+.logo{
+  height: 105px;
+  width:105px;
+  border-radius: 50%;
+}
+
+.list-links {
+  font-size: 40px;
+  font-weight: 500;
+  display: block;
+  color: #dd3131;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+.list-links:hover {
+  background-color:#e499ab;
+}
+
+body {
+ background-image: url("3.jpg");
+ background-color: #cccccc;
+ background-repeat: no-repeat;
+ background-size: cover ;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: fantasy;
+}
+
+.footer{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  margin-top: 200px;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+  bottom: 0px;
+  width: 97%;
+  height: auto;
+  background: rgba(17, 17, 17, 0.637);
+  color: #cccccc;
+
+}
+
+.main-content{
+  display: flex;
+  }
+
+  .main-content .box{
+    flex-basis:50%;
+    padding:10px 20px;
+  }
+
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .box .content {
+    margin: 20px 20px 0 0;
+  }
+
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social {
+    margin: 20px 0 0 0 ;
+  }
+
+  .left .content .social a{
+   padding: 0 2px;
+  }
+
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align:center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .left .content .social a span:hover{
+    background: #38b9e0;
+  }
+
+  .center {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+ 
+
+
+
+.contactbox{
+  width: 380px;
+  height: 480px;
+  background: rgba(0, 0, 0, 0.74);
+ margin-top: 150px;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  padding: 70px 30px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,10%);
+  border-radius: 10%;
+}
+
+.icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+}
+
+.contactbox p
+{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.contactbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactbox input[type="text"], input[type= "email"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contactbox input[type="text"]:hover, input[type= "email"]:hover
+{
+border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(4, 252, 252);
+  font-size: 17px;
+
+}
+
+.contactbox input[type="submit"]
+{
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+.contactbox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #28a2db;
+  color: #000;
+  font-size: 25px;
+  border-radius: 22px;
+   height: 42px;
+}
+
+
+@media screen and (max-width:  1000px) {  
+    
+  .list{
+   margin: 10px;
+}
+
+.logo{
+  height: 10vw;
+  width:10vw;
+  border-radius: 50%;
+}
+
+.list-links {
+  font-size: 4vw;
+  font-weight: 300;
+  
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.footer{
+ 
+  margin-top: 6vh;
+  padding: 0px;
+  overflow: hidden;
+  position:absolute;
+  bottom: 0px;
+  margin-left:3vw;
+  margin-right: 3vw;
+  padding: 0px;
+  width:97vw;
+  height:15vh;
+
+}
+.main-content .box{
+    flex-basis:50%;
+    padding:4px 8px;
+  }
+
+  .box h2{
+    font-size: 0.8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  .box .content {
+    margin: 3px 3px 0 0;
+  }
+
+  .left .content p{
+    text-align: justify;
+    font-size:8px;
+  }
+  .left .content .social {
+    margin: 4px 0 0 0 ;
+  }
+
+  .left .content .social a{
+   padding: 0 2px;
+  }
+
+  .left .content .social a span{
+    height: 30px;
+    width: 30px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align:center;
+    font-size: 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+
+  .left .content .social a span:hover{
+    background: #38b9e0;
+  }
+
+  .center {
+    margin-left: 2px;
+    margin-right: 10px;
+    width:10vw;
+    font-size:0.8rem;
+  }
+  
+
+
+.contactbox{
+  margin-bottom: 100px;
+  width:  80vw;
+  height: 55vh;
+  background: rgba(0, 0, 0, 0.74);
+ margin-top: 80px;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  padding: 70px 30px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,10%);
+  border-radius: 10%;
+}
+
+.icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 15px;
+  text-align: center;
+}
+
+.contactbox p
+{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.contactbox input{
+  width: 60vw;
+  margin-bottom: 20px;
+}
+
+.contactbox input[type="text"], input[type= "email"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contactbox input[type="text"]:hover, input[type= "email"]:hover
+{
+border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(4, 252, 252);
+  font-size: 17px;
+
+}
+
+.contactbox input[type="submit"]
+{
+  margin-top: 10px;
+  
+  border: none;
+  outline: none;
+  height: 35px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.contactbox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #28a2db;
+  color: #000;
+  font-size: 25px;
+  border-radius: 22px;
+   height: 42px;
+}
+}
+
+
