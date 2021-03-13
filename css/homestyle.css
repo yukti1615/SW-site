@@ -14,6 +14,7 @@ body {
 }
 /* blocks common to all */
 .block-area {
+  align-items: center;
   margin: 5%;
   padding: 5% !important;
   overflow: hidden;
@@ -25,10 +26,10 @@ body {
 }
 /* navbar */
 .navbar.bg-light {
-  background-color: rgba(71, 3, 23, 0.8) !important;
+  background-color: rgba(73, 3, 24, 0.8) !important;
 }
 .nav-link {
-  color: #d88476 !important;
+  color: #fcd7be !important;
   font-size: 1.2rem !important;
   font-weight: 500 !important;
   margin: 0 20px !important;
@@ -38,19 +39,31 @@ body {
 }
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
-  color: #d88476 !important;
+  color: #fcd7be !important;
   font-weight: 900;
 }
 /* buttons main */
+.main-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2px !important;
+}
 .main-btn {
+  background-size: 200% 100%;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
   font-size: 30px;
   font-weight: 900;
+  width: 20%;
+  margin: 2%;
+  background-image: linear-gradient(to right, #f59f30, #f1be16, #470317cc);
+  box-shadow: 0 4px 3px 0 #552404;
   color: #fff !important;
-  padding: 5px 20px;
+  padding: 5px 2px;
   height: 60px;
-  border-radius: 11px;
+  border-radius: 6px;
   border: none;
-  background-size: 300% 100%;
   moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -71,27 +84,13 @@ body {
 .main-btn:focus {
   outline: none;
 }
-
-.main-btn {
-  background-image: linear-gradient(
-    to right,
-    #222831,
-    #686d76,
-    #222831,
-    #393e46
-  );
-  box-shadow: 0 4px 3px 0 #f1d1bb;
-
-  margin-top: 3%;
-}
-
 .btn-link {
   text-decoration: none;
   color: #fff !important;
 }
 
 .btn-link:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #fff;
 }
 /* carousel */
